@@ -1,0 +1,44 @@
+.cryptocurrency {
+  padding: 63px 117px 63px 0;
+  background-color: #F4F4F4;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 500px;
+    text-align: left;
+  }
+
+  &__title {
+    color: var(--black-color);
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  &__descr {
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    line-height: 28px
+  }
+
+  &__btn {
+    padding: 15px 33px;
+    &:hover {
+      color: var(--white-color);
+    }
+  }
+
+  &__image {
+    img {
+      max-width: 550px;
+      display: block;
+    }
+  }
+}
