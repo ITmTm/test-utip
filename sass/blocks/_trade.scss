@@ -1,0 +1,104 @@
+.trade {
+  padding: 150px 0;
+  background-color: #f4f4f4;
+
+  &__title {
+    color: var(--black-color);
+    font-size: 32px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 54px;
+  }
+
+  .grid {
+    display: grid;
+  }
+
+  &__list {
+    background: linear-gradient(180deg, var(--white-color) 0%, var(--white-color) 100%);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  &__item {
+    position: relative;
+    &--big {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      height: auto;
+      width: 539px;
+      border-left: 1px solid #F4F4F4;
+      border-right: 1px solid #F4F4F4;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 79px;
+        width: 349px;
+        height: 339px;
+        background-image: url("../img/trade/bargaining.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        pointer-events: none;
+        z-index: 1;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 90px;
+        right: 65px;
+        width: 280px;
+        height: 286px;
+        background: url("../img/trade/pattern.svg") no-repeat center;
+        background-size: contain;
+        z-index: 0;
+        pointer-events: none;
+      }
+    }
+    &--1,
+    &--2 {
+      border-bottom: 1px solid #F4F4F4;;
+    }
+  }
+
+  .trade__item--big .trade__img {
+    margin-top: 0;
+    padding-top: 25px;
+  }
+
+  &__text {
+    padding: 54px 0 34px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  &__caption {
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__descr {
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+
+  .trade__img {
+    margin-top: auto;
+    width: 30px;
+    height: 32px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+}
