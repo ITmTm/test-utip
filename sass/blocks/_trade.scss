@@ -27,8 +27,8 @@
       grid-row: 1 / span 2;
       height: auto;
       width: 539px;
-      border-left: 1px solid #F4F4F4;
-      border-right: 1px solid #F4F4F4;
+      border-left: 1px solid #d8d8d8;
+      border-right: 1px solid #d8d8d8;
       &::after {
         content: '';
         position: absolute;
@@ -57,7 +57,7 @@
     }
     &--1,
     &--2 {
-      border-bottom: 1px solid #F4F4F4;;
+      border-bottom: 1px solid #d8d8d8;;
     }
   }
 
@@ -90,7 +90,7 @@
     line-height: 1.5;
   }
 
-  .trade__img {
+  &__img {
     margin-top: auto;
     width: 30px;
     height: 32px;
@@ -100,5 +100,4 @@
       display: block;
     }
   }
-
 }
