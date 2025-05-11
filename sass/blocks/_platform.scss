@@ -3,34 +3,44 @@
   background-color: var(--white-color);
 
   &__container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__content {
-	max-width: 450px;
-	text-align: left;
+    max-width: 450px;
+    text-align: left;
   }
 
   &__title {
-	color: var(--black-color);
-	font-size: 32px;
-	font-weight: 500;
-	margin-bottom: 25px;
+    color: var(--black-color);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 25px;
   }
 
   &__descr {
-	color: var(--black-color);
-	font-size: 16px;
-	font-weight: 400;
-	margin-bottom: 42px;
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 42px;
   }
 
   &__btn {
-	padding: 14px 26px;
-	&:hover {
-	  color: var(--white-color);
-	}
+    padding: 14px 26px;
+    &:hover {
+      color: var(--white-color);
+    }
+  }
+
+  &__img {
+    max-width: 782px;    // никогда не больше 782px
+
+    img {
+      display: block;
+      width: 100%;         // растягиваем/сжимаем картинку по ширине блока
+      height: auto;
+    }
   }
 }
