@@ -1,0 +1,664 @@
+@media (max-width: 1500px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+// max-xl
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    padding: 0;
+  }
+
+  .header {
+    padding: 25px 50px;
+
+    &__menu {
+      column-gap: 60px;
+    }
+  }
+
+  .cryptocurrency {
+    &__container {
+      padding-right: 90px;
+    }
+    &__image {
+      img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+
+  .trade {
+    padding: 110px 0;
+
+    &__list {
+      grid-template-rows: auto;
+    }
+
+    &__item {
+      &--big {
+        width: 475px;
+        height: 500px;
+        &:before {
+          bottom: 90px;
+          right: 50px;
+          width: 250px;
+          height: 250px;
+        }
+        &:after {
+          right: 70px;
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+
+    .trade__item--big .trade__img {
+      padding-top: 60px;
+    }
+
+    &__text {
+      padding: 10px 0 10px 10px;
+    }
+
+    &__caption {
+      font-size: 18px;
+    }
+
+    &__descr {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    &__img {
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  .platform {
+    padding: 100px 0;
+
+    &__img {
+      img {
+        width: 450px;
+      }
+    }
+  }
+
+  .faq {
+    padding: 100px 0;
+  }
+
+  .footer {
+
+    &__apps {
+      column-gap: 15px;
+    }
+
+    &__btn {
+      padding: 12px 15px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+
+    &__preview {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// max-lg
+@media (max-width: 992px) {
+  .container {
+    max-width: 680px;
+  }
+
+  .header {
+    padding: 20px 25px;
+    &__burger {
+      display: block;
+      margin-right: 35px;
+    }
+    &__logo {
+      flex-grow: 2;
+      img {
+        width: 63px;
+        height: 63px;
+      }
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    .language-select {
+      display: none;
+    }
+
+    &__login {
+      padding: 11px 26px;
+    }
+
+  }
+
+  .cryptocurrency {
+    padding: 90px 0 55px 0;
+    &__container {
+      justify-content: space-evenly;
+    }
+
+    &__image {
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    &__content {
+      max-width: 370px;
+    }
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    &__descr {
+      font-size: 14px;
+    }
+
+    &__btn {
+      padding: 13px 31px;
+      font-size: 14px;
+    }
+  }
+
+  .trade {
+    &__title {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      width: 600px;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto;
+      justify-content: center;
+    }
+
+    &__item {
+      width: auto;
+      height: auto;
+      &--big {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        min-height: 224px;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #d8d8d8;
+        &:after {
+          width: 182px;
+          height: 182px;
+        }
+        &:before {
+          width: 130px;
+          height: 130px;
+          bottom: 65px;
+        }
+      }
+      &--1 {
+        border-right: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+      }
+      &--3 {
+        border-right: 1px solid #d8d8d8;
+      }
+    }
+
+
+
+    &__text {
+      padding: 15px;
+    }
+
+    &__caption {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    &__descr {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    &__img {
+      order: -1;
+      margin-top: 0;
+      margin-bottom: 10px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .trade .trade__item--big .trade__img {
+    padding: 0;
+  }
+
+  .platform {
+    padding: 55px 0;
+
+    &__container {
+      column-gap: 30px;
+      margin-right: 0;
+    }
+
+    &__content {
+      max-width: 260px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    &__descr {
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    &__btn {
+      padding: 15px 40px;
+      font-size: 14px;
+    }
+
+    &__img {
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+  .faq {
+    padding: 55px 0;
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    &__item {
+      max-width: 552px;
+      &:last-of-type {
+        margin-bottom: 35px;
+      }
+    }
+
+    &__question {
+      font-size: 18px;
+    }
+
+    &__answer {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .footer {
+    padding: 80px 0;
+
+    &__top {
+      margin-bottom: 40px;
+      align-items: end;
+    }
+
+    &__logo {
+      img {
+        width: 50px;
+        height: 60px;
+      }
+    }
+
+    &__apps {
+      column-gap: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 10px;
+
+      p {
+        font-size: 10px;
+        br {
+          display: none;
+        }
+      }
+    }
+
+    &__wrapper {
+      column-gap: 10px;
+      a {
+        img {
+          width: 39px;
+          height: 40px;
+        }
+      }
+    }
+
+    &__info {
+      display: none;
+    }
+
+    &__center {
+      flex-wrap: wrap;
+      column-gap: 90px;
+      row-gap: 50px;
+      margin-bottom: 45px;
+    }
+
+    &__column {
+      &--contacts {
+        display: block;
+
+        li {
+          a {
+            color: var(--white-color);
+            opacity: 1;
+          }
+        }
+      }
+      &:nth-child(3) {
+        margin-right: 45px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    &__preview {
+      li {
+        &:nth-child(3) {
+          li {
+            display: none;
+          }
+        }
+
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+
+    hr {
+      margin-bottom: 40px;
+    }
+
+    &__bottom {
+      font-size: 10px;
+
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+
+}
+
+                                        //md
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .trade {
+    &__list {
+      width: 100%;
+    }
+
+    &__descr {
+      font-size: 12px;
+    }
+  }
+
+  .platform {
+    &__img {
+      img {
+        width: 260px;
+      }
+    }
+  }
+
+  .footer {
+    &__center {
+      column-gap: 40px;
+    }
+  }
+
+}
+
+                                          //sm
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .header {
+    &__logo {
+      img {
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
+
+  .cryptocurrency {
+    padding: 70px 0 20px 0;
+
+    &__container {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+
+    &__content {
+      width: 100%;
+    }
+
+    &__btn {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .trade {
+    padding: 56px 0;
+
+    .container {
+      padding-right: 10px;
+    }
+
+    &__title {
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+
+    .grid {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+
+    &__list {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 0;
+      margin-bottom: 20px;
+      scroll-behavior: smooth;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &__item {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+      border: none;
+      &--big {
+        order: -1;
+        &:before {
+          width: 93px;
+          height: 95px;
+          right: 15px;
+          bottom: 40px;
+        }
+        &::after {
+          width: 125px;
+          height: 121px;
+          right: 20px;
+        }
+      }
+    }
+
+    &__text {
+      padding: 25px 20px 0 20px;
+    }
+
+    &__pagination {
+      display: flex;
+      justify-content: center;
+
+      button {
+        width: 13px;
+        height: 13px;
+        margin: 0 5px;
+        padding: 0;
+        border: 2px solid #e5e5e5;
+        border-radius: 50%;
+        background: var(--white-color);
+        cursor: pointer;
+      }
+
+      button.active {
+        background: #44b0b0;
+        border: none;
+      }
+    }
+  }
+
+  .platform {
+    &__container {
+      flex-direction: column;
+      row-gap: 50px;
+    }
+
+    &__content {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    &__descr {
+      font-size: 12px;
+    }
+
+    &__btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    &__img {
+      width: 100%;
+      img {
+        width: 100%;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .faq {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__question {
+      padding: 10px;
+    }
+
+    &__answer {
+      p {
+        font-size: 12px;
+        padding: 10px;
+      }
+    }
+
+    &__btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .footer {
+    padding: 45px 0;
+
+    .container {
+      padding: 0 10px;
+    }
+
+    &__top {
+      flex-flow: wrap;
+      align-items: center;
+      row-gap: 15px;
+      margin-bottom: 30px;
+      column-gap: 20px;
+    }
+
+    &__btn {
+      margin-left: auto;
+      padding: 15px 27px;
+    }
+
+    &__center {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    &__column, &__column--contacts {
+      width: 100%;
+      border-bottom: 1px solid #d0d0d05c;
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+
+    &__preview {
+      display: none;
+    }
+
+    hr {
+      margin-bottom: 30px;
+    }
+  }
+}
