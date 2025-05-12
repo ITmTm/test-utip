@@ -12,6 +12,13 @@
 <div class="site-container">
 	<header class="header">
 		<div class="header__container">
+
+			<button class="header__burger burger">
+				<span class="burger__line"></span>
+				<span class="burger__line"></span>
+				<span class="burger__line"></span>
+			</button>
+
 			<a href="#" class="header__logo">
 				<img src="img/logo/logo.svg" alt="United Brokers">
 			</a>
@@ -68,7 +75,7 @@
 							<p class="trade__descr">
 								99,9% ордеров исполняются&nbsp;<br>
 								менее чем за 11.06 мс
-								/p>
+							</p>
 							<div class="trade__img">
 								<img src="img/trade/stopwatch.svg" alt="stopwatch">
 							</div>
@@ -79,7 +86,7 @@
 						<div class="trade__text">
 							<h3 class="trade__caption">Мировые стандарты безопасности</h3>
 							<p class="trade__descr">
-								Выбирайте надежного брокера, который&nbsp;<br>
+								Выбирайте надежного брокера, который<br>
 								работает с клиентами более чем в 83<br>
 								странах мира
 							</p>
@@ -103,7 +110,7 @@
 						</div>
 					</li>
 
-					<li class="trade__item">
+					<li class="trade__item trade__item--3">
 						<div class="trade__text">
 							<h3 class="trade__caption">150+ инструментов </h3>
 							<p class="trade__descr">
@@ -130,6 +137,7 @@
 						</div>
 					</li>
 				</ul>
+				<div class="trade__pagination"></div>
 			</div>
 		</section>
 
@@ -141,9 +149,10 @@
 					<a href="#" class="platform__btn btn">Подробнее</a>
 				</div>
 
-				<div class="platform__img">
-					<img src="img/platform/platform.png" alt="platform">
-				</div>
+				<picture class="platform__img">
+					<source srcset="img/platform/platform-mobile.png" media="(max-width: 992px)">
+					<img src="img/platform/platform-desktop.png" alt="Платформа United Brokers">
+				</picture>
 			</div>
 		</section>
 
@@ -182,10 +191,12 @@
 						Скачать приложение<br>
 						United Brokers:
 					</p>
-					<a href="#"><img src="img/footer/windows.svg" alt="Windows"></a>
-					<a href="#"><img src="img/footer/cloud.svg" alt="Cloud"></a>
-					<a href="#"><img src="img/footer/apple.svg" alt="iOS"></a>
-					<a href="#"><img src="img/footer/android.svg" alt="Android"></a>
+					<div class="footer__wrapper">
+						<a href="#"><img src="img/footer/windows.svg" alt="Windows"></a>
+						<a href="#"><img src="img/footer/cloud.svg" alt="Cloud"></a>
+						<a href="#"><img src="img/footer/apple.svg" alt="iOS"></a>
+						<a href="#"><img src="img/footer/android.svg" alt="Android"></a>
+					</div>
 				</div>
 
 				<div class="footer__info">
@@ -237,6 +248,14 @@
 						<li><a href="#">Документы</a></li>
 						<li><a href="#">Сохранность средств</a></li>
 						<li><a href="#">Вакансии</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__column--contacts">
+					<h4 class="footer__subtitle">Контакты</h4>
+					<ul class="footer__preview">
+						<li><a href="tel:+79002229999" class="footer__phone">+7 (900) 222-99-99</a></li>
+						<li><a href="mailto:info@unitedbrokers.io" class="footer__mail">info@unitedbrokers.io</a></li>
 					</ul>
 				</div>
 
