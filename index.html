@@ -6,14 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <title>Test Utip</title>
 </head>
 <body>
 <div class="site-container">
 	<header class="header">
 		<div class="header__container">
 
-			<button class="header__burger burger">
+			<button class="header__burger burger"
+					aria-label="Открыть/закрыть меню"
+					aria-expanded="false"
+					aria-controls="header-menu">
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
@@ -34,7 +37,7 @@
 
 			<div class="header__controls">
 				<div class="language-select">
-					<label for="language-select__native" class="visually-hidden"></label>
+					<label for="language-select__native" class="visually-hidden">Язык сайта</label>
 					<select name="language" id="language-select__native" class="language-select__native">
 						<option value="ru" selected>RU</option>
 						<option value="en">EN</option>
@@ -149,10 +152,9 @@
 					<a href="#" class="platform__btn btn">Подробнее</a>
 				</div>
 
-				<picture class="platform__img">
-					<source srcset="img/platform/platform-mobile.png" media="(max-width: 992px)">
-					<img src="img/platform/platform-desktop.png" alt="Платформа United Brokers">
-				</picture>
+				<div class="platform__img">
+					<img src="img/platform/platform.png" alt="Платформа United Brokers">
+				</div>
 			</div>
 		</section>
 
