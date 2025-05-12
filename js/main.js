@@ -7,8 +7,8 @@ document.querySelectorAll('.faq__question').forEach(btn => {
 
 
 // 2) Слайдер
-const slider     = document.querySelector('.trade__list');
-const slides     = document.querySelectorAll('.trade__item');
+const slider = document.querySelector('.trade__list');
+const slides = document.querySelectorAll('.trade__item');
 const pagination = document.querySelector('.trade__pagination');
 
 if (slider && pagination) {
