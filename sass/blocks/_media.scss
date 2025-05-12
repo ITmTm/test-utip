@@ -258,8 +258,8 @@
     padding: 55px 0;
 
     &__container {
-      column-gap: 30px;
-      margin-right: 0;
+      position: relative;
+      column-gap: 50px;
     }
 
     &__content {
@@ -284,7 +284,8 @@
 
     &__img {
       img {
-        width: 400px;
+        width: 150%;
+        margin-left: auto;
       }
     }
   }
@@ -433,9 +434,13 @@
   }
 
   .platform {
+    &__container {
+      column-gap: 30px;
+    }
+
     &__img {
       img {
-        width: 260px;
+        width: 200%;
       }
     }
   }
@@ -565,6 +570,7 @@
     &__container {
       flex-direction: column;
       row-gap: 50px;
+      column-gap: 0;
     }
 
     &__content {
@@ -587,10 +593,8 @@
     }
 
     &__img {
-      width: 100%;
       img {
-        width: 100%;
-        margin-left: 10px;
+        width: 150%;
       }
     }
   }
